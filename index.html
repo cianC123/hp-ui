@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harry potter creatures ui</title>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="info-panel.js"></script>
+    </head>
+    <body>
+        <a-scene background="color:#212">
+            <a-assets>
+                <img id="bg" src="assets/background.jpg">
+                <img src="assets/dementor.jpg">
+                <img src="assets/dementorPoster.jpg">
+                <img src="assets/goblin.jpg">
+                <img src="assets/goblinPoster.jpg">
+                <img src="assets/hippogrif.jpg">
+                <img id="hg" src="assets/hippogrifPoster.jpg">
+                <img src="assets/houseelf.jpg">
+                <img src="assets/houseelfPoster.jpg">
+                <img src="assets/phoenix.jpg">
+                <img src="assets/phoenixPoster.jpg">
+            </a-assets>
+            <a-sky src="#bg"></a-sky>
+            <a-entity id="ui" position="0 1.6 -2.5">
+            <a-entity id="menu" highlight>
+                <a-entity id="hippogrifb" position="-1.6 0 0" mixin="frame" class="menubutton">
+                    <a-entity material="src:#hg" mixin="poster"></a-entity>
+                </a-entity>
+            </a-entity>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
